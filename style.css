@@ -12,6 +12,8 @@ header{
     font-size: 20px;
     color: #1f2ce5db;
     padding: 20px 10px;
+    display: flex;
+    justify-content: space-around;
 }
 
 header h1 i {
@@ -30,6 +32,11 @@ header h1 i {
     justify-content: space-around;
     list-style: none;
     color: rgb(248, 241, 241);
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
 }
 
 .paragraf{
