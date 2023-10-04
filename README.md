@@ -153,15 +153,15 @@ Jawaban
 ```
 ### Inline
 
-    ```
-        <header style="text-align: center; background-color: black; color: white;">
-            <h1>CSS Internal dan <i>Inline CSS</i></h1>
-        </header>
-    ```
+```
+<header style="text-align: center; background-color: black; color: white;">
+    <h1>CSS Internal dan <i>Inline CSS</i></h1>
+</header>
+```
     
 ### Internal
 
-    ```
+```
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -174,16 +174,16 @@ Jawaban
       }
     </style>
     </head>
-    ```
+ ```
 
 ### Eksternal
 
-    ```
+ ```
     header{
     background-color: aqua;
     color: white;
     }
-    ```
+  ```
     
 ### Hasil
 <img width="955" alt="#5" src="https://github.com/DimasF3009/Lab2web/assets/115356128/b994a637-fb5f-420e-98f8-7fc4344a9a77">
