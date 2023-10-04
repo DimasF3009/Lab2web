@@ -139,6 +139,78 @@ ul li a{
    terdapat deklarasi CSS, maka deklarasi manakah yang akan ditampilkan pada browser?
    Berikan penjelasan dan contohnya! ( <p id="paragraf-1" class="text-paragraf"> )
 ```
+Jawaban 
 ```
-2. x
+2. h1 {...} deklarasi CSS ini mendefinisikan gaya untuk semua elemen <h1>dalam dokumen HTML.
+   Artinya deklarasi ini akan mempengaruhi semua <h1> di seluruh halaman.
+   #intro h1 {...} deklarasi CSS ini mendefinisikan gaya untuk semua elemen <h1> dalam elemen ID intro.
+   Artinya deklarasi ini akan mempengaruhi semua <h1> di dalam elemen dengan ID intro.
 ```
+```
+3. Deklarasi inline CSS memiliki prioritas tertinggi karena langsung terhubung dengan elemen tersebut.
+   Deklarasi internal CSS memiliki prioritas kedua karena ada di dalam halaman HTML.
+   Deklarasi CSS eksternal akan memiliki prioritas terendah karena berada di luar halaman HTML.
+```
+### Inline
+
+    ```
+        <header style="text-align: center; background-color: black; color: white;">
+            <h1>CSS Internal dan <i>Inline CSS</i></h1>
+        </header>
+    ```
+    
+### Internal
+
+    ```
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+      header{
+        background-color: red;
+        color: white;
+      }
+    </style>
+    </head>
+    ```
+
+### Eksternal
+
+    ```
+    header{
+    background-color: aqua;
+    color: white;
+    }
+    ```
+    
+### Hasil
+<img width="955" alt="#5" src="https://github.com/DimasF3009/Lab2web/assets/115356128/b994a637-fb5f-420e-98f8-7fc4344a9a77">
+
+```
+Dari gambar tersebut dapat disimpulkan bahwa kode css yang akan di eksekusi adalah kode inline
+```
+
+```
+4. Pada sebuah elemen HTML terdapat ID dan Class, apabila masing-masing selector tersebut
+terdapat deklarasi CSS, maka deklarasi manakah yang akan ditampilkan pada browser?
+Berikan penjelasan dan contohnya! ( <p id="paragraf-1" class="text-paragraf"> )
+```
+
+```
+#paragraf-1{
+    color: black;
+}
+.text-paragraf{
+    color: yellow;
+}
+```
+<img width="960" alt="#6" src="https://github.com/DimasF3009/Lab2web/assets/115356128/bc2a6e14-8004-458c-8bb6-f0de3d8dcb80">
+
+```
+ID memiliki tingkat specificity yang lebih tinggi daripada class. Oleh karena itu, 
+jika terdapat konflik antara deklarasi CSS pada ID dan class yang sama-sama diterapkan pada elemen yang sama, 
+deklarasi pada ID akan memiliki prioritas lebih tinggi dan akan di eksekusi terlebih dahulu.
+```
+
